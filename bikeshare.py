@@ -1,3 +1,8 @@
+"""
+This is the project from previous task.
+We have created a github repository for this project
+"""
+
 import time
 import pandas as pd
 import numpy as np
