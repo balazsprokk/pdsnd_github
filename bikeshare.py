@@ -146,6 +146,7 @@ def user_stats(df):
     start_time = time.time()
 
     # TO DO: Display counts of user types
+    # Use the .count() function
 
     user_type_counts = df.groupby('User Type')['User Type'].count()
     print(user_type_counts)
@@ -173,7 +174,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-    
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -183,7 +184,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        
+
         print("Would you like see a tabular presentation of this data with five rows? \n Please, enter yes or no: ")
         display_data = input()
         display_data = display_data.lower()
@@ -196,11 +197,11 @@ def main():
             i += 5
             display_data = input()
             display_data = display_data.lower()
-        
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-        
+
 
 if __name__ == "__main__":
 	main()
