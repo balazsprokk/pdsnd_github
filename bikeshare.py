@@ -147,11 +147,13 @@ def user_stats(df):
     start_time = time.time()
 
     # TO DO: Display counts of user types
+    # Use the .count() function
 
     user_type_counts = df.groupby('User Type')['User Type'].count()
     print(user_type_counts)
 
     # TO DO: Display counts of gender
+    # Use the .count() function
     if 'Gender' in df:
         gender_counts = df.groupby('Gender')['Gender'].count()
         print(gender_counts)
@@ -174,7 +176,8 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-# Display data in tabular forms
+
+    # Display data in tabular forms
 def main():
     while True:
         city, month, day = get_filters()
