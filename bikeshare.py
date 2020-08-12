@@ -1,6 +1,5 @@
 """
-This is the project from previous task.
-We have created a github repository for this project
+Some random comments for practice
 """
 
 import time
