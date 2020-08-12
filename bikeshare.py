@@ -104,6 +104,7 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
+    # Use mode function from pandas dataframe-module to display.
     most_common_start_station = df['Start Station'].mode()[0]
     print(most_common_start_station)
 
@@ -173,7 +174,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-# Display data in tabular forms    
+# Display data in tabular forms
 def main():
     while True:
         city, month, day = get_filters()
